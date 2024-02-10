@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="calculator.css">
+    
+    <title>Fancy Calculator</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="calculator">
+            <input type="text" id="display" class="form-control value" disabled>
+            <div class="buttons mt-3">
+                <span class="btn btn-secondary clear" onclick="clearDisplay()">C</span>
+                <span class="btn btn-secondary" onclick="appendToDisplay('/')">/</span>
+                <span class="btn btn-secondary" onclick="appendToDisplay('*')">*</span>
+                <span class="btn btn-secondary" onclick="appendToDisplay('7')">7</span>
+                <span class="btn btn-secondary" onclick="appendToDisplay('8')">8</span>
+                <span class="btn btn-secondary" onclick="appendToDisplay('9')">9</span>
+                <span class="btn btn-secondary" onclick="appendToDisplay('-')">-</span>
+                <span class="btn btn-secondary" onclick="appendToDisplay('4')">4</span>
+                <span class="btn btn-secondary" onclick="appendToDisplay('5')">5</span>
+                <span class="btn btn-secondary" onclick="appendToDisplay('6')">6</span>
+                <span class="btn btn-secondary plus" onclick="appendToDisplay('+')">+</span>
+                <span class="btn btn-secondary" onclick="appendToDisplay('1')">1</span>
+                <span class="btn btn-secondary" onclick="appendToDisplay('2')">2</span>
+                <span class="btn btn-secondary" onclick="appendToDisplay('3')">3</span>
+                <span class="btn btn-secondary equal" onclick="calculate()">=</span>
+                <span class="btn btn-secondary" onclick="appendToDisplay('0')">0</span>
+                <span class="btn btn-secondary" onclick="appendToDisplay('.')">.</span>
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
